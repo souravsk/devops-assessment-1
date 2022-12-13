@@ -18,13 +18,13 @@ except Exception as ex:
 
 @app.route('/')
 def index():
-    return 'Hello world!'
+    return "Hello Sourav!"
 
-@app.route("/loogin")
+@app.route('/login')
 def login():
     return redirect(AUTH_URL, code=302)
 
-@app.route("/auth/callback")
+@app.route('/auth/callback')
 def custom_callback():
     return "Logged in!"
 
